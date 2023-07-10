@@ -1,0 +1,279 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'">
+
+
+
+    <mat-toolbar style="padding-top:90px">
+      <div class="card my-5 text-center position-relative"
+        style="border-radius:20px;margin-left: 15px; margin-bottom:-200px;;height:90px;width: 11rem;background: linear-gradient(to right bottom, #0d0045, #2F194F);border:1px solid white">
+        <div class="image-container"><img class="card-img-top rounded-pill mx-auto" style="width:60px; height:60px"
+            src="assets/emp9.jpg" alt="Card image cap"></div>
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <p class="card-text text-light mt-3" style="font-size:12px; font-weight:500;">ASMA HAIBELTY <span
+              style="font-weight: 100;font-size:smaller">(RH)</span></p>
+        </div>
+      </div>
+    </mat-toolbar>
+
+    <mat-nav-list class=" menu-list d-flex flex-column justify-content-center align-items-start "
+      style="margin-top:70px">
+      <div class="navItem menu-item d-flex exp justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item" class="menu-link">Tableau de bord</span></a>
+      </div>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Gestion des employés</span></a>
+      </div>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Gestion des présences</span></a>
+      </div>
+      <div class="navItem  menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Gestion de la formation <br>et de
+            développement</span></a>
+      </div>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Gestion des employés</span></a>
+      </div>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faHome" class="menu-icon"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Gestion des congés</span></a>
+      </div>
+      <br>
+      <br>
+      <br>
+      <p style="color: white;margin-left: 10px;font-size:smaller; font-weight:bolder">PAGES DES COMPTES</p>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faUser" class="menu-icon" style="width:46px;height:30px"></fa-icon>
+        <a mat-list-item href="#" style="color: white"><span class="item">Profile</span></a>
+      </div>
+      <div class="navItem menu-item d-flex justify-content-start align-items-center">
+        <fa-icon [icon]="faSignOut" class="menu-icon" style="width:40px;height:30px"></fa-icon>
+        <a mat-list-item href="#" style="color: white;"><span class="item">Déconnexion</span></a>
+      </div>
+
+    </mat-nav-list>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="d-flex justify-content-between flex-wrap">
+      <div class="left-box d-flex justify-content-between align-items-center">
+        <span style="font-weight:bold; font-size: 1em; color:#3C3586;">BONJOUR, ASMA</span>
+        <button style="color:#39347B" type="button" aria-label="Toggle sidenav" mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      </div>
+
+
+      <div class="right-box d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center mx-2">
+          <mat-icon style="color:#39347B; margin-right: 8px;cursor:pointer">search</mat-icon>
+          <input class="form-control mr-sm-2" type="search" placeholder="Can't find something?" aria-label="Search">
+        </div>
+
+        <mat-icon style="color:#39347B; margin-right: 8px;">notifications</mat-icon>
+      </div>
+
+
+
+    </mat-toolbar>
+    <div class="container pt-4">
+      <div class="top row d-flex flex-wrap row-cols-1 row-cols-sm-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="card card-box" style="box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.111);">
+            <div class="top d-flex justify-content-between align-items-center">
+              <fa-icon [icon]="faBan"></fa-icon>
+              <p>This month</p>
+            </div>
+            <div class="mid">
+              <p>Demande d'abscence</p>
+            </div>
+            <div class="bot d-flex justify-content-between align-items-center">
+              <p>15</p>
+              <div class="btn"><button class="voir">Voir</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-box" style="box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.111);">
+            <div class="top d-flex justify-content-between align-items-center">
+              <fa-icon [icon]="faPersonWalkingLuggage"></fa-icon>
+              <p>This month</p>
+            </div>
+            <div class="mid">
+              <p>Demission</p>
+            </div>
+            <div class="bot d-flex justify-content-between align-items-center">
+              <p>23</p>
+              <div class="btn"><button class="voir">Voir</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-box" style="box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.111);">
+            <div class="top d-flex justify-content-between align-items-center">
+              <fa-icon [icon]="faHouseLock"></fa-icon>
+              <p>This month</p>
+            </div>
+            <div class="mid">
+              <p>Conge</p>
+            </div>
+            <div class="bot d-flex justify-content-between align-items-center">
+              <p>55</p>
+              <div class="btn"><button class="voir">Voir</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-box" style="box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.111);">
+            <div class="top d-flex justify-content-between align-items-center">
+              <fa-icon [icon]="faSchoolCircleCheck"></fa-icon>
+              <p>This month</p>
+            </div>
+            <div class="mid">
+              <p>HS</p>
+            </div>
+            <div class="bot d-flex justify-content-between align-items-center">
+              <p>45</p>
+              <div class="btn"><button class="voir">Voir</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-box" style="box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.111);">
+            <div class="top d-flex justify-content-between align-items-center">
+              <fa-icon [icon]="faPersonChalkboard"></fa-icon>
+              <p>This month</p>
+            </div>
+            <div class="mid">
+              <p>Formation</p>
+            </div>
+            <div class="bot d-flex justify-content-between align-items-center">
+              <p>75</p>
+              <div class="btn"><button class="voir">Voir</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 g-lg-0">
+        <div class="col-lg-9 py-1">
+          <div class="card h-100" style="border-radius: 14px; box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.1);">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title fw-bold ms-2 mb-5" style="font-size:larger">Performance</h5>
+                <p style="color:#A1A1A1">2023</p>
+              </div>
+              <div class="area" [chart]='chart'></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ps-lg-2 py-1">
+          <div class="card h-100" style="border-radius:14px; box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.1);">
+            <div class="card-body pe-5">
+              <div class="d-flex justify-content-between mb-5">
+                <div>
+
+                  <span class="text-left fw-bold">Absence</span>
+                </div>
+                <div>
+
+                  <span class="text-right" style="color:#2c27b8;font-weight:600">52</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div>
+                  <img class="me-2" src="assets/emp.webp" alt="User Image" width="40" height="40">
+                  <span style="color:#A1A1A1">Robert Kale</span>
+                </div>
+
+                <div class="ml-auto">
+
+                  <fa-icon [icon]="faMessage" style="color:#A1A1A1"></fa-icon>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div>
+                  <img class="me-2" src="assets/emp2.jpg" alt="User Image" width="40" height="40">
+                  <span style="color:#A1A1A1">Robert Kale</span>
+                </div>
+
+                <div class="ml-auto">
+
+                  <fa-icon style="color:#A1A1A1" [icon]="faMessage"></fa-icon>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div>
+                  <img class="me-2" src="assets/emp5.jpeg" alt="User Image" width="40" height="40">
+                  <span style="color:#A1A1A1">Robert Kale</span>
+                </div>
+
+                <div class="ml-auto">
+
+                  <fa-icon style="color:#A1A1A1" [icon]="faMessage"></fa-icon>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+
+                <button class="btn" style="color:#A1A1A1">View all(52)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ps-lg-0 ps-md-2 ps-sm-0 py-1">
+          <div class="card h-100" style="border-radius: 14px; box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.1);">
+            <div class="card-body">
+
+              <mat-card class="demo-inline-calendar-card">
+                <mat-calendar></mat-calendar>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 ps-lg-2 py-1">
+          <div class="card h-100" style="border-radius: 14px; box-shadow: 0px 6px 15px 3px rgba(0, 0, 0, 0.1);">
+            <div class="card-body">
+              <div class="row row-cols-lg-2">
+                <div class="col-lg-7 col-sm-12 col-sm-12">
+                  <div class="row">
+                    <div class="col-12">
+
+                      <h5 class="card-title"
+                        style="color:#060368; font-weight:550;font-size:2em;margin-top:-20px; margin-bottom:40px; display:flex; align-items:center">
+                        Percentage</h5>
+                    </div>
+                    <div class="col-12 my-5">
+
+                      <p class="card-text h-100"
+                        style="color:#060368; font-weight:1000;font-size:25px;margin-bottom:40px;">5028</p>
+                    </div>
+                    <div class="col chart">
+                      <div class="div" [chart]="bar"></div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                  <div class="div" [chart]="donchart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-table></app-table>
+    </div>
+
+
+
+
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

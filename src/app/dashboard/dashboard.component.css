@@ -1,0 +1,239 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.card{
+  width:100%;
+  margin:0px;
+
+}
+
+
+
+.col
+{
+  margin: auto;
+  margin-bottom:10px;
+
+}
+.row{
+  margin-top:15px;
+}
+img{
+  border-radius: 50%
+}
+.card-box{
+  border-radius:14px;
+  background: linear-gradient(to right bottom, #3F3693, #2C2F48);
+  transition: 0.3s ease-in-out;
+}
+.card-box:hover {
+  transform: scale(1.02);
+}
+fa-icon{
+  margin:6px 5px ;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 50%;
+  background-color:white;
+  width:35px;
+  height:35px;
+  font-size:larger
+}
+
+.top p{
+  margin:7px 10px;
+  color:white;
+  font-weight: 300;
+  font-size:smaller
+}
+.mid p{
+  color: white;
+  margin-left:8px;
+  font-weight: 350;
+  font-size: 15px;
+}
+.bot p{
+  color: white;
+  margin-left:8px;
+  font-weight:bold;
+  font-size:larger
+}
+.voir{
+  color:#2C2F48;
+  background-color:#f3ab9f;
+  border-radius:5px;
+  font-size:smaller;
+  cursor: pointer;
+  height:24px;
+  width:60px;
+  display:flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+
+mat-sidenav{
+  min-width: 250px; width: 100%;
+
+  background: radial-gradient(circle at center right,#b140b7,#523D90 ,#221547, #160033);
+
+}
+
+.navItem fa-icon{
+  width:37px;
+  height:30px;
+  border-radius: 10px;
+
+}
+
+.item{
+  color:white;
+  font-size:11px;
+  font-weight:300;
+}
+
+.navItem{
+  margin-left:10px;
+  width:220px;
+}
+
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: white;
+  margin-top: 16px;
+  height:40px;
+  transition: 300ms ease-in-out;
+  border-radius: 10px;
+}
+.item{
+  line-height:1;
+}
+
+.menu-item:hover {
+  background-color: rgb(255, 255, 255); /* Set the background color on hover */
+
+  transition: 300ms ease-in-out;
+}
+
+.menu-item:hover .menu-icon{
+
+  color: white;
+  background-color:rgb(52, 4, 92);
+}
+.menu-item:hover .item{
+
+
+  color:rgb(52, 4, 92);
+  font-weight:bold
+}
+
+
+.menu-icon {
+  color: rgb(52, 4, 92);
+  margin-right: 8px;
+  background-color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.menu-link {
+  color: rgb(255, 255, 255);  /* Set the default color of the menu links */
+
+}
+.exp{
+  background-color:white;
+}
+.exp .menu-icon{
+  background-color: rgb(52, 4, 92);
+  color:white;
+}
+.exp .menu-link{
+  color:rgb(52, 4, 92);
+  font-size:smaller;
+  font-weight:bolder
+}
+.menu-item.active {
+  background-color: purple; /* Set the background color of the active item */
+  color:rgb(52, 4, 92)
+}
+
+
+
+.menu-item.active .menu-icon {
+  color: white; /* Set the color of the active item icon */
+}
+
+
+.image-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container img {
+  display: block;
+  width: 60%;
+  height: auto;
+}
+
+
+
+.card {
+  position: relative;
+
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border: 1px solid transparent;
+  border-radius:14px;
+}
+
+
+img{
+  border: 2px solid white;
+}
+
+
+@media (max-width: 514px) {
+  .chart {
+    transform: scale(0.7); /* Adjust the scale value as per your requirement */
+  }
+}
+
